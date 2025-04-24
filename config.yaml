@@ -1,0 +1,48 @@
+# 默认有三种通知方式，不需要的可以注释掉
+telegram:
+  token: "xxxxxx"
+  chat_id: "xxxxxx"
+
+# bark:
+#   base: "xxxxxx"
+#   key: "xxxxxx"
+
+# twilio:
+#   account_sid: "xxxxxx"
+#   auth_token: "xxxxxx"
+#   from: "+xxxxxx"
+#   to: "+31xxxxxx"
+
+# 房源扫描的设置
+scan_settings:
+  interval_seconds: 2          # 每几秒扫描一次
+  basic_rent_limit: 2000       # 基本租金上限
+  allowance_threshold: 0       # 房补金额下限，如果设为0则关注所有房子（或者注释掉），如果大于0（其实只需要1即可），则只关注有房补的房子。
+  timezone: "Europe/Amsterdam"
+
+# 以下是需要关注的城市，不需要的可以注释掉
+cities:
+  "24": "Amsterdam"
+  "110": "Diemen"
+  "27": "Utrecht"
+  "90": "Den Haag"
+  "6249": "Amersfoort"
+  "26": "Delft"
+  "25": "Rotterdam"
+  "6209": "Maarssen"
+  # "28": "Den Bosch"
+  # "29": "Eindhoven"
+  # "320": "Arnhem"
+  # "545": "Groningen"
+  # "6051": "Nieuwegein"
+  # "6088": "Zoetermeer"
+  # "6090": "Maastricht"
+  # "6093": "Tilburg"
+  # "6099": "Helmond"
+  # "620": "Dordrecht"
+  # "619": "Capelle aan den IJssel"
+  # "6211": "Sittard"
+  # "6217": "Nijmegen"
+  # "6224": "Rijswijk"
+  # "6145": "Zeist"
+  # "616": "Haarlem"

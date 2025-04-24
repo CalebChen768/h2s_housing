@@ -1,0 +1,17 @@
+[Unit]
+Description=H2S Python Service
+After=network.target
+
+[Service]
+
+WorkingDirectory=/home/h2s-housing
+
+ExecStart=/usr/bin/python3 /home/h2s-housing/H2S.py
+
+Type=simple
+
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
